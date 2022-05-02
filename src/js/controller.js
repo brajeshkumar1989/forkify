@@ -20,7 +20,7 @@ import addRecipeView from './views/addRecipeView.js';
 const controlRecipe = async function () {
   try {
     const id = window.location.hash.slice(1);
-
+    
     if (!id) return;
     recipeView.renderSpinner();
 
