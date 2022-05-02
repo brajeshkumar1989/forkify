@@ -4,7 +4,7 @@ import { API_URL, RES_PER_PAGE, KEY } from './config.js';
 import { AJAX } from './helpers.js';
 
 export const state = {
-  recipe: {},
+  recipe: {bookmarked:false,},
   search: {
     query: '',
     results: [],
@@ -12,7 +12,7 @@ export const state = {
     resultsPerPage: RES_PER_PAGE,
   },
   bookmarks: [],
-  bookmarked:false,
+  
 };
 
 const createRecipeObject = function (data) {
