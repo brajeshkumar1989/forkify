@@ -12,6 +12,7 @@ export const state = {
     resultsPerPage: RES_PER_PAGE,
   },
   bookmarks: [],
+  bookmarked:false,
 };
 
 const createRecipeObject = function (data) {
